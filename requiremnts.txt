@@ -1,0 +1,2 @@
+durable-rules==0.33.125
+SPARQLWrapper==1.8.1
