@@ -41,7 +41,7 @@ import getpass
 from SPARQLWrapper import SPARQLWrapper2
 
 
-if getpass.getuser() == 'root':  # Docker check
+if getpass.getuser() == 'root' or getpass.getuser() == 'gridappsd':  # Docker check
     sparql = SPARQLWrapper2("http://blazegraph:8080/bigdata/sparql")
 else:
     sparql = SPARQLWrapper2("http://127.0.0.1:8889/bigdata/sparql")
